@@ -35,7 +35,7 @@ function Home() {
             <p>
               Pizza the circle of goodness <span ref={el}></span>
             </p>
-            <NavLink to="fooditem">
+            <NavLink to="/fooditem">
               <button className="Home-btn">Order Now</button>
             </NavLink>
           </div>
