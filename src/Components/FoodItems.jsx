@@ -4,7 +4,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { UseAuth } from "../Context/AuthContext";
-
+import { toast } from "react-toastify";
 function FoodItems() {
   const { Cart, AddCart } = UseAuth();
   return (
@@ -21,7 +21,7 @@ function FoodItems() {
                 onClick={() => {
                   for (let X of Cart) {
                     if (Itme.id === X.id) {
-                      alert("already added");
+                      toast("already added");
                       return;
                     }
                   }
