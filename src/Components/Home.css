@@ -1,0 +1,114 @@
+.home {
+  max-width: 1280px;
+  min-height: 650px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem;
+}
+.box {
+  max-width: 700px;
+  z-index: 1;
+}
+.box p {
+  font-size: 4.5rem;
+  font-weight: 800;
+  text-transform: capitalize;
+  color: black;
+}
+.box p span {
+  color: rgb(255, 95, 37);
+}
+.image img {
+  width: 400px;
+  height: 400px;
+  object-position: center;
+  object-fit: contain;
+  border-radius: 200px 80px 80px 200px;
+}
+.Home-btn {
+  padding: 0.8rem 1.3rem;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  color: white;
+  background-color: rgb(255, 95, 37);
+  margin-top: 1rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.Home-btn:hover {
+  background-color: orangered;
+  box-shadow: 1px 1px 10px 1px orangered;
+}
+.DayNight {
+  margin: auto;
+  /* margin-top: 2rem; */
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: orangered;
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: 1px 1px 10px 1px orangered;
+}
+.DayNight:hover {
+  background-color: #156049;
+  box-shadow: 1px 1px 10px 1px #156049;
+}
+.DayNight.Active {
+  color: white;
+}
+.DayNight .moon:nth-child(2),
+.Active .DayNight .sun:nth-child(1) {
+  display: none;
+}
+.Active .DayNight .moon:nth-child(2) {
+  display: block;
+}
+.Active .box p {
+  color: white;
+}
+
+/* ------------scren-response---------------------- */
+
+@media (max-width: 846px) {
+  .home {
+    max-width: 1280px;
+    min-height: 650px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+  .box p {
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: black;
+  }
+  .box {
+    height: 330px;
+  }
+  .DayNight {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 610px) {
+  .box {
+    height: 500px;
+  }
+  .DayNight {
+    margin-bottom: 1rem;
+  }
+}

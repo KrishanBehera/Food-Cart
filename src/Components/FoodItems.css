@@ -1,0 +1,132 @@
+.fooditme {
+  position: relative;
+  top: 50px;
+  display: grid;
+  max-width: 1280px;
+  margin: auto;
+  gap: 1rem;
+  grid-template-rows: repeat(3, 300px);
+  grid-template-columns: repeat(4, 300fr);
+  justify-items: center;
+  align-items: center;
+}
+.Food-1 {
+  padding: 0.8rem;
+  display: grid;
+  transition: 0.5s;
+  background-color: whitesmoke;
+  border-radius: 0.4rem;
+  /* overflow: hidden; */
+  color: black;
+  width: 250px;
+  max-height: 400px;
+}
+.Food-1:hover {
+  transform: scale(1.1);
+}
+.Food-1 img {
+  width: 100%;
+  height: 150px;
+  object-position: center;
+  object-fit: cover;
+}
+.foodname {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.foodprice {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.order {
+  border: none;
+  padding: 0.4rem;
+  font-weight: 500;
+  background-color: orangered;
+  color: white;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  /* border: 1px solid rgba(128, 128, 128, 0.342); */
+}
+
+/* -----------footer--------------- */
+
+.footer {
+  background-color: #156049;
+  height: 200px;
+  position: relative;
+  top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-logo {
+  max-width: 1280px;
+  /* margin: auto; */
+}
+.footer h1 {
+  color: white;
+  font-weight: 500;
+}
+.footer-logo img {
+  width: 100px;
+}
+.social {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: orangered;
+}
+.soial-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+}
+
+.Active .Food-1 {
+  color: white;
+}
+
+/* -----------screen-response-------------- */
+
+@media (min-width: 50px) and (max-width: 350px) {
+  .fooditme {
+    max-width: 1000px;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem;
+  }
+  .Food-1 {
+    color: black;
+    width: 200px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 650px) {
+  .fooditme {
+    max-width: 1000px;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+  }
+  .Food-1 {
+    width: 150px;
+    /* height: 300px; */
+  }
+}
+
+@media (min-width: 650px) and (max-width: 1050px) {
+  .fooditme {
+    max-width: 1000px;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+  }
+  .Food-1 {
+    width: 200px;
+    height: 300px;
+  }
+}
