@@ -66,11 +66,11 @@
 .DayNight.Active {
   color: white;
 }
-.DayNight .moon:nth-child(2),
-.Active .DayNight .sun:nth-child(1) {
+.DayNight .sun:nth-child(1),
+.Active .DayNight .moon:nth-child(2) {
   display: none;
 }
-.Active .DayNight .moon:nth-child(2) {
+.Active .DayNight .sun:nth-child(1) {
   display: block;
 }
 .Active .box p {
